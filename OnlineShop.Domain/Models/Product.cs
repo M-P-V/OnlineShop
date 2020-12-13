@@ -22,7 +22,5 @@ namespace OnlineShop.Domain.Models
         public Category Category { get; set; }
 
         public DbSet<AttributeValue> AttributeValues { get; set; }
-
-        public DbSet<SubCategory> SubCategories { get; set; }
     }
 }

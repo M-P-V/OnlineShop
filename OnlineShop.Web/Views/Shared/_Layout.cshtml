@@ -9,30 +9,36 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-dark">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">OnlineShop.Web</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">OnlineShop</a>
+                @await Component.InvokeAsync("Categories")
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+    <nav class=" navbar-expand-sm bg-dark">
+        <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index">OnlineShop</a>
+    </nav>
+    <div class="wrapper d-flex align-items-stretch">
+        <div class="row flex-xl-nowrap">
+            <nav id="sidebar" class="navbar bg-dark">
+                <ul class="list-unstyled components mb-5">
+                    <li class="nav-link">
+                        <h1> Test 1 </h1>
+                    </li>
+                    <li class="nav-link">
+                        <h1> Test 2 </h1>
+                    </li>
+                    <li class="nav-link">
+                        <h1> Test 3 </h1>
+                    </li>
+                </ul>
+            </nav>
+            <div class="p-4 p-md-5 pt-5">
+                Teest Body
+            </div>
+        </div>
+
     </div>
 
     <footer class="border-top footer text-muted">

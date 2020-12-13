@@ -4,8 +4,8 @@ using System.Threading.Tasks;
 
 namespace OnlineShop.Repositories
 {
-    public interface ICategoryRepository
+    public interface ISubCategoryRepository
     {
-        Task<List<Category>> GetCategoriesListAsync();
+        Task<List<SubCategory>> GetSubCategoriesListAsync(int categoryId);
     }
 }

@@ -4,8 +4,8 @@ using System.Threading.Tasks;
 
 namespace OnlineShop.Repositories
 {
-    public interface ICategoryRepository
+    public interface IAttributeValueRepository
     {
-        Task<List<Category>> GetCategoriesListAsync();
+        Task<List<AttributeValue>> GetProductAttributeValuesAsync(int productId);
     }
 }

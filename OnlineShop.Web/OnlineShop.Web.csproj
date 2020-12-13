@@ -22,6 +22,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OnlineShop.Domain\OnlineShop.Domain.csproj" />
+    <ProjectReference Include="..\OnlineShop.Repositories.Implementation\OnlineShop.Repositories.Implementation.csproj" />
+    <ProjectReference Include="..\OnlineShop.Repositories\OnlineShop.Repositories.csproj" />
+    <ProjectReference Include="..\OnlineShop.Services.Implementation\OnlineShop.Services.Implementation.csproj" />
+    <ProjectReference Include="..\OnlineShop.Services\OnlineShop.Services.csproj" />
   </ItemGroup>
 
 </Project>
