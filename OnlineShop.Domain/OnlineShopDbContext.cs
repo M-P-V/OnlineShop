@@ -8,9 +8,15 @@ namespace OnlineShop.Domain
         public OnlineShopDbContext(DbContextOptions options) : base(options) { }
 
         public DbSet<Category> Categories { get; set; }
+        
+        public DbSet<SubCategory> SubCategories { get; set; }
+
         public DbSet<Order> Orders { get; set; }
+
         public DbSet<Product> Products { get; set; }
-        public DbSet<Customer> Customers { get; set; }
-        public DbSet<Adress> Adresses { get; set; }
+
+        public DbSet<Attribute> Attributes { get; set; }
+
+        public DbSet<AttributeValue> AttributeValues { get; set; }
     }
 }
